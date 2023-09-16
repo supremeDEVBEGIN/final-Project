@@ -1,0 +1,116 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+.table.booked {
+    background-color: gray; 
+    color: white;
+    pointer-events: none;
+}
+.table.empty {
+    background-color: white;
+}
+.table.selected {
+    background-color: green;
+    color: white;
+}
+.status-text{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.empty-box {
+    background-color: white;
+}
+
+.selected-box {
+    background-color: green;
+}
+
+.booked-box {
+    background-color: gray;
+}
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation-status{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* styles.css (หรือชื่อไฟล์ CSS อื่น ๆ ที่คุณใช้) */
+.line-login-button {
+    color: green; /* เลือกสีเขียวที่คุณต้องการ */
+    text-decoration: none;
+    padding: 8px 16px; /* ปรับขนาดของปุ่มตามที่ต้องการ */
+    border: 1px solid green; /* สีเขียวเหมือนกันสำหรับเส้นขอบ */
+    border-radius: 4px; /* ปรับมุมของปุ่มตามที่ต้องการ */
+  }
+  
+  .line-login-button:hover {
+    background-color: green; /* สีเขียวเมื่อนำเมาส์ไปชี้ */
+    color: white; /* สีข้อความกลางปุ่มเป็นสีขาว */
+  }
+  
+
+/* CSS สำหรับหน้าจอขนาดเล็ก (mobile) */
+@media (max-width: 768px) {
+    .table {
+        width: 30px; /* ปรับขนาดของโต๊ะในหน้าจอเล็ก */
+        height: 30px;
+        font-size: 12px; /* ปรับขนาดตัวอักษรของโต๊ะในหน้าจอเล็ก */
+        margin: 5px; /* ปรับระยะห่างรอบโต๊ะในหน้าจอเล็ก */
+    }
+    .status-box {
+        width: 15px; /* ปรับขนาดของกล่องสถานะในหน้าจอเล็ก */
+        height: 15px;
+    }
+}
+
+/* CSS สำหรับหน้าจอขนาดกลาง (tablet) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .table {
+        width: 40px; /* ปรับขนาดของโต๊ะในหน้าจอกลาง */
+        height: 40px;
+        font-size: 14px; /* ปรับขนาดตัวอักษรของโต๊ะในหน้าจอกลาง */
+        margin: 8px; /* ปรับระยะห่างรอบโต๊ะในหน้าจอกลาง */
+    }
+    .status-box {
+        width: 18px; /* ปรับขนาดของกล่องสถานะในหน้าจอกลาง */
+        height: 18px;
+    }
+}
+
+/* CSS สำหรับหน้าจอขนาดใหญ่ (desktop) */
+@media (min-width: 1025px) {
+    /* คงค่าค่าขนาดและระยะห่างเดิมในหน้าจอใหญ่ */
+    .table {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        margin: 10px;
+    }
+    .status-box {
+        width: 20px;
+        height: 20px;
+    }
+}
+
